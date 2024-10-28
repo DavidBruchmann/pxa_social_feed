@@ -22,7 +22,8 @@ class TwitterV2Source extends BaseSource
 
     public function __construct(
         private readonly EventDispatcherInterface $eventDispatcher,
-    ) {}
+    ) {
+    }
 
     /**
      * Load feed source

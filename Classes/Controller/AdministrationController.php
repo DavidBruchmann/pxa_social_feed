@@ -264,8 +264,7 @@ class AdministrationController extends ActionController
         if ($tokenConfigurations->count() === 0) {
             $this->tokenRepository->remove ( $tokenToDelete );
 
-            if ( $tokenToDelete->getType () === Token::FACEBOOK )
-                {
+            if ( $tokenToDelete->getType () === Token::FACEBOOK ) {
                 // Remove all page access tokens created by this token
                 $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
                     ->getConnectionForTable('tx_pxasocialfeed_domain_model_token');
@@ -304,7 +303,6 @@ class AdministrationController extends ActionController
 
         $this->view->assignMultiple(compact('configuration', 'tokens'));
         $this->assignBEGroups();
-
 
         $this->moduleTemplate->setContent ( $this->view->render () );
         return $this->htmlResponse ( $this->moduleTemplate->renderContent () );

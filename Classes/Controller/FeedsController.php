@@ -50,7 +50,9 @@ class FeedsController extends ActionController
         $this->feedRepository = $feedRepository;
     }
 
-    protected function initializeView($view) {}
+    protected function initializeView($view)
+    {
+    }
 
     /**
      * List action

@@ -7,4 +7,6 @@ namespace Pixelant\PxaSocialFeed\Exception;
 /**
  * Class UnsupportedTokenType
  */
-class UnsupportedTokenType extends \Exception {}
+class UnsupportedTokenType extends \Exception
+{
+}

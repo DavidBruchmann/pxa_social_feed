@@ -447,10 +447,9 @@ class Token extends AbstractEntity
      */
     public function getParentToken(): ?Token
     {
-        if ( $this->parentToken instanceof Token )
-            {
+        if ( $this->parentToken instanceof Token ) {
             return $this->parentToken;
-            }
+        }
         return NULL;
     }
 

@@ -16,7 +16,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * Class FacebookFeedUpdater
  */
 class FacebookFeedUpdater extends BaseUpdater
-    {
+{
     /**
      * Create/Update feed items
      *

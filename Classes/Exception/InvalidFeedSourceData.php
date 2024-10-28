@@ -7,4 +7,6 @@ namespace Pixelant\PxaSocialFeed\Exception;
 /**
  * Class InvalidFeedSourceData
  */
-class InvalidFeedSourceData extends \Exception {}
+class InvalidFeedSourceData extends \Exception
+{
+}
